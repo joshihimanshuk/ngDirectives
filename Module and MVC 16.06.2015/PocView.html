@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/Code.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="pocmod">
+    <div ng-controller="poctrl" >
+        <h2>List of Cources</h2>
+        <table style="border:double;border-right-color:blue">
+            <tr ng-repeat="n in CData">
+                <td>{{n}}</td>
+            </tr>
+            <caption>
+                Caption
+            </caption>
+
+        </table>
+        <h2>Display Products</h2>
+        <div ng-controller="democtrl">
+            <p spellcheck="true" title="Controller is democtrl" ng-repeat="n in PData">
+                {{n}}
+            </p>
+        </div>
+    </div>
+</body>
+</html>
